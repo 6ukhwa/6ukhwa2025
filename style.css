@@ -1,11 +1,28 @@
 /* 언어설정 */
 @charset 'utf-8';
 
+/* 폰트정보 */
+@import url('https://webfontbox.github.io/Arita/font.css');
+@import url('https://webfontbox.github.io/Arita/font.min.css');
+
+/* font-family: 'Arita'; */
+/*
+Thin(100)
+Light(300)
+Medium(500)
+SemiBold(600)
+Bold(700) 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+/* font-family: "Lora", serif; */
+
 /* 전체설정 */
 * {
     margin: 0;
     padding: 0;
     color: #181818;
+    font-size: 20px;
 }
 a {
     color: #181818;
@@ -15,3 +32,260 @@ ul {list-style: none;}
 img {
     vertical-align: bottom;
 }
+body {
+    font-family: 'Arita';
+}
+
+
+/* #loader{
+    position:absolute; 
+    top: 0;
+    left: 0; 
+    width: 100vw;
+    height: 100vh; 
+    z-index: 99999; 
+}
+#loader:before,
+#loader:after{
+    content: ''; 
+    display: block; 
+    background-color: #242428; 
+    width: 50%; 
+    height: 100%; 
+    position: absolute; 
+    top: 0; 
+    transition: 0.5s 1s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+    transform: translateX(0);
+
+}
+#loader:before {left : 0;}
+#loader:after {right : 0;}
+
+#loader.loaded:before {transform :translateX(-100%);}
+#loader.loaded:after {transform :translateX(100%);} */
+
+
+
+/* 헤더 설정######################### */
+header {
+    width: 100%;
+    height: 100vh;
+    cursor: default;
+}
+.header_inner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.header_inner .main_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+}
+.header_inner p {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.header_inner .title {
+    font-weight: 700;
+    font-size: 200px;
+    margin-top: -40px;
+    text-align: center;
+    letter-spacing: -5px;
+}
+.wi {
+    font-weight: 700;
+    font-size: 200px;
+    margin-top: -40px;
+    letter-spacing: -5px;
+}
+.header_inner figcaption {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    bottom: 16%;
+}
+.break {
+    display: block;
+    text-align: center;
+    margin-left: 5px;
+}
+.header_inner .scroll {
+    position: absolute;
+    bottom: 5%;
+    animation: doong 2s infinite;
+}
+.header_inner .scroll i {
+    color: #afafaf;
+    font-size: 40px;
+}
+
+@keyframes doong {
+    0% {transform: translateY(0);
+        animation-timing-function: ease-in}
+    50% {transform: translateY(20px);
+        animation-timing-function: ease-out}
+    100% {transform: translateY(0);
+        animation-timing-function: ease-in;}
+}
+
+
+/* gnb 설정############################## */
+nav {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #181818;
+}
+.nav_inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav_inner h1 {
+    margin-left: 30px;
+    margin-top: 14px;
+}
+.nav_inner h1 a {}
+.nav_inner ul {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    justify-content: space-around;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.nav_inner ul li {
+    padding: 5px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+.nav_inner ul li::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    transition: width 250ms ease-out; 
+    left: auto; 
+    right: 0;  
+    width: 0;
+}
+.nav_inner ul li:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+
+/* 메인 미디어쿼리############# */
+  @media(max-width:600px) {
+    .header_inner .main_title {
+        top: 30%;
+    }
+    .header_inner p {
+        font-size: 20px;
+    }
+    .header_inner .title {
+        font-size: 80px;
+        margin-top: 30px;
+        display: block;
+        align-items: center;
+    }
+    .wi {
+        font-size: 80px;
+        margin-top: 0;
+        display: block;
+    }
+    .header_inner figcaption {
+        font-size: 16px;
+        display: block;
+        align-items: center;
+    }
+    .break {
+        display: block;
+        font-size: 16px;
+    }
+    .nav_inner .gnb {
+        display: none;
+    }
+  }
+  @media(min-width:601px) and (max-width:768px) {
+    .header_inner .main_title {
+        top: 30%;
+    }
+    .header_inner p {
+        font-size: 20px;
+    }
+    .header_inner .title {
+        font-size: 140px;
+        margin-top: 30px;
+    }
+    .wi {
+        display: block;
+        font-size: 140px;
+        margin-top: 0;
+    }
+    .header_inner figcaption {
+        font-size: 16px;
+    }
+    .break {
+        font-size: 16px;
+    }
+    .nav_inner .gnb {
+        display: none;
+    }
+  }
+  @media(min-width:769px) and (max-width:999px) {
+    .header_inner .title {
+        font-size: 140px;
+        margin-top: 10px;
+    }
+    .wi {
+        font-size: 140px;
+    }
+    .nav_inner .gnb {
+        display: none;
+    }
+    .header_inner figcaption {
+        bottom: 30%;
+    }
+  }
+  @media(min-width:1000px) and (max-width:1279px) {}
+
+
+
+
+
+    /* 와이드데스크탑 */
+/* 1280px 이상일때 설정 */
+@media(min-width:1280px) {
+    .header_inner {
+        width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+
+@media(max-width:600px) {}
+@media(min-width:601px) and (max-width:768px) {}
+@media(min-width:769px) and (max-width:999px) {}
+@media(min-width:1000px) and (max-width:1279px) {}
