@@ -233,7 +233,7 @@ nav {
         font-size: 16px;
     }
     .header_inner .title {
-        width: 90vw;
+        width: 70vw;
     }
     .header_inner figcaption {
         font-size: 16px;
@@ -276,8 +276,8 @@ nav {
         width: 320px;
         height: 320px;
     }
-    .nav_inner .gnb {
-        display: none;
+    .nav_inner ul {
+        width: 400px;
     }
   }
   @media(min-width:769px) and (max-width:999px) {
@@ -293,9 +293,6 @@ nav {
     .header_inner .main_img {
         width: 320px;
         height: 320px;
-    }
-    .nav_inner .gnb {
-        display: none;
     }
   }
   @media(min-width:1000px) and (max-width:1279px) {}
