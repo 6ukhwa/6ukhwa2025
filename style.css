@@ -118,9 +118,9 @@ header {
     width: 400px;
     height: 400px;
     clip-path: inset(0 50% 0 50%);
-    animation: flower 2.5s 1.5s linear forwards;
+    animation: flower 1s 1.5s linear forwards;
     margin-top: 30px;
-    min-width: 100vw;
+    min-width: 90vw;
 }
 @keyframes flower {
     0% {
@@ -241,15 +241,12 @@ nav {
         align-items: center;
     }
     .header_inner .main_img {
-        width: 90vw;
-        height: 90vw;
+        width: 100vw;
+        height: 100vw;
     }
     .break {
         display: block;
         font-size: 16px;
-    }
-    .header_inner .scroll {
-        display: none;
     }
     .nav_inner .gnb {
         display: none;
