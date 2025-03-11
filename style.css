@@ -281,7 +281,7 @@ nav {
     }
   }
   @media(min-width:769px) and (max-width:999px) {
-    .header_inner p {
+    /* .header_inner p {
         font-size: 20px;
     }
     .header_inner .title {
@@ -293,7 +293,7 @@ nav {
     .header_inner .main_img {
         width: 320px;
         height: 320px;
-    }
+    } */
   }
   @media(min-width:1000px) and (max-width:1279px) {}
 
