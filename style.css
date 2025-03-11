@@ -34,6 +34,7 @@ img {
 }
 body {
     font-family: 'Arita';
+    overflow-x: hidden;
 }
 
 
@@ -299,12 +300,78 @@ nav {
 
 
 
+  /* contact 섹션 설정############### */
+  .contact {
+    height: 700px;
+    width: 100vw;
+    background-color: #181818;
+    position: relative;
+  }
+  .contact .contact_inner {
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    /* background-color: red; */
+  }
+  .contact .contact_inner h2 {
+    color: #ffffff;
+    font-size: 48px;
+  }
+  .contact .contact_inner p {
+    margin-bottom: -40px;
+  }
+  .contact .contact_inner p a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 100;
+  }
+  .contact .contact_inner p a i {
+    color: #fff;
+    margin-right: 5px;
+  }
+  .contact .contact_inner .qrcode {
+    background-image: url(img/qr.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 180px;
+    height: 180px;
+  }
 
+  @media(max-width:600px) {
+    .contact .contact_inner {
+        height: 300px;
+    }
+    .contact .contact_inner h2 {
+        font-size: 40px;
+      }
+      .contact .contact_inner p a {
+        font-size: 16px;
+      }
+      .contact .contact_inner p a i {
+        font-size: 16px;
+      }
+      .contact .contact_inner .qrcode {
+        width: 140px;
+        height: 140px;
+      }
+  }
+@media(min-width:601px) and (max-width:768px) {
+}
+@media(min-width:769px) and (max-width:999px) {}
+@media(min-width:1000px) and (max-width:1279px) {}
 
     /* 와이드데스크탑 */
 /* 1280px 이상일때 설정 */
 @media(min-width:1280px) {
-    .header_inner {
+    .header_inner, .contact_inner {
         width: 1280px;
         margin: 0 auto;
     }
