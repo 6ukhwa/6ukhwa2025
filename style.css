@@ -117,17 +117,17 @@ header {
     background-size: contain;
     width: 400px;
     height: 400px;
-    clip-path: inset(0 50% 0 50%);
+    clip-path: inset(0 50vw 0 50vw);
     animation: flower 1s 1.5s linear forwards;
     margin-top: 30px;
-    min-width: 90vw;
+    /* min-width: 90vw; */
 }
 @keyframes flower {
     0% {
-        clip-path: inset(0 50% 0 50%);
+        clip-path: inset(0 calc(50% + 10px) 0 calc(50% + 10px));
     }
     50% {
-        clip-path: inset(0 30% 0 30%);
+        clip-path: inset(0 calc(30% + 5px) 0 calc(30% + 5px));
     }
     100% {
         clip-path: inset(0 0 0 0);
@@ -241,8 +241,8 @@ nav {
         align-items: center;
     }
     .header_inner .main_img {
-        width: 100vw;
-        height: 100vw;
+        width: 90vw;
+        height: 90vw;
     }
     .break {
         display: block;
