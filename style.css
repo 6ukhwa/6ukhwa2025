@@ -309,7 +309,7 @@ nav {
         width: 100%;
         height: 200px;
         background-image: url(img/pro_title.png);
-        background-position: center top;
+        background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
         background-attachment: fixed;
@@ -323,10 +323,67 @@ nav {
     .project article>div {
         width: 50%;
     }
+    .project article .img_box {
+        /* background-color: green; */
+    }
+    .project article .txt_box {
+        /* background-color: pink; */
+        position: relative;
+    }
+    .project article .txt_box .tBox_inner {
+        /* background-color: darkcyan; */
+        height: 60%;
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 7%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .project article .txt_box .tBox_inner h2 {
+        font-size: 40px;
+        margin-bottom: -30px;
+    }
+    .project article .txt_box .tBox_inner p {
+        font-size: 16px;
+        width: 60%;
+        font-weight: 300;
+    }
+    .project article .txt_box .tBox_inner ul {}
+    .project article .txt_box .tBox_inner ul li {
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        font-weight: 300;
+    }
+    .project article .txt_box .tBox_inner ul li>div {
+        width: 70px;
+    }
+    .project article .txt_box .tBox_inner .site {
+        font-family: 'Arita';
+        width: 150px;
+        height: 50px;
+        border: 1px solid #181818;
+        background-color: #fff;
+        transition: 0.3s;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .project article .txt_box .tBox_inner .site:hover {
+        background-color: #181818;
+        color: #fff;
+    }
+
     .project article:nth-child(2) .img_box {
         display: flex;
         align-items: center;
         justify-content: right;
+    }
+    .project article:nth-child(2) .txt_box {
     }
     .project article:nth-child(2) .img_box div {
         width: 700px;
@@ -441,7 +498,7 @@ nav {
   .contact .topBtn {
     position: absolute;
     right: 15%;
-    top: 50%;
+    top: 80%;
     color: #fff;
     width: 50px;
     height: 50px;
