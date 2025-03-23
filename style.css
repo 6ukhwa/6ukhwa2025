@@ -553,7 +553,7 @@ nav {
     /* 와이드데스크탑 */
 /* 1280px 이상일때 설정 */
 @media(min-width:1280px) {
-    .header_inner, .contact_inner {
+    .header_inner, .contact_inner, .nav_inner {
         width: 1280px;
         margin: 0 auto;
     }
