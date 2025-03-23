@@ -301,7 +301,11 @@ nav {
   @media(min-width:1000px) and (max-width:1279px) {}
 
 
-    /* project 섹션################## */
+
+
+
+
+/* project 섹션################## */
     .project {
         height: 2800px;
     }
@@ -320,18 +324,14 @@ nav {
         border-bottom: #181818 1px solid;
         display: flex;
     }
-    .project article>div {
-        width: 50%;
-    }
     .project article .img_box {
-        /* background-color: green; */
+        width: 55%;
     }
     .project article .txt_box {
-        /* background-color: pink; */
+        width: 45%;
         position: relative;
     }
     .project article .txt_box .tBox_inner {
-        /* background-color: darkcyan; */
         height: 60%;
         width: 90%;
         position: absolute;
@@ -378,69 +378,58 @@ nav {
         color: #fff;
     }
 
-    .project article:nth-child(2) .img_box {
+
+
+    .project article .img_box {
         display: flex;
         align-items: center;
         justify-content: right;
     }
-    .project article:nth-child(2) .txt_box {
+    .project article .img_box div {
+        width: 700px;
+        height: 351px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
     .project article:nth-child(2) .img_box div {
-        width: 700px;
-        height: 351px;
         background-image: url(img/pro_1.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
-
-
-
-    .project article:nth-child(3) .img_box {
-        display: flex;
-        align-items: center;
-        justify-content: right;
+    .project article:nth-child(2) .img_box {
+        position: relative;
+    }
+    .project article:nth-child(2) .img_box img {
+        width: 180px;
+        height: 353px;
+        position: absolute;
+        top: 35%;
+        right: 5%;
     }
     .project article:nth-child(3) .img_box div {
-        width: 700px;
-        height: 351px;
         background-image: url(img/pro_2.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    }
-
-
-
-    .project article:nth-child(4) .img_box {
-        display: flex;
-        align-items: center;
-        justify-content: right;
     }
     .project article:nth-child(4) .img_box div {
-        width: 700px;
-        height: 351px;
         background-image: url(img/pro_3.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    }
-
-
-
-    .project article:nth-child(5) .img_box {
-        display: flex;
-        align-items: center;
-        justify-content: right;
     }
     .project article:nth-child(5) .img_box div {
-        width: 700px;
-        height: 351px;
         background-image: url(img/pro_4.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
+    .project article:nth-child(5) .img_box {
+        position: relative;
+    }
+    .project article:nth-child(5) .img_box img {
+        width: 180px;
+        height: 353px;
+        position: absolute;
+        top: 35%;
+        right: 5%;
+    }
+
+    @media(max-width:600px) {}
+    @media(min-width:601px) and (max-width:768px) {}
+    @media(min-width:769px) and (max-width:999px) {}
+    @media(min-width:1000px) and (max-width:1279px) {}
+
 
 
 
