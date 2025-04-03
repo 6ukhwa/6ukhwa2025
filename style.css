@@ -403,13 +403,9 @@ nav {
       }
       .about .abt_title {
         width: 100%;
-        height: 120px;
-        background-image: url(img/abt_title.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: scroll;
-      }
+        height: 200px;
+        background-size: 160%;
+    }
     .about .about_inner {
         display: flex;
         flex-direction: column;
@@ -479,6 +475,9 @@ nav {
         height: 1300px;
         /* background-color: darksalmon; */
       }
+      .about .abt_title {
+        background-size: 150%;
+    }
     .about .about_inner {
         display: flex;
         flex-direction: column;
@@ -545,6 +544,9 @@ nav {
         height: 1300px;
         /* background-color: darksalmon; */
       }
+      .about .abt_title {
+        background-size: 130%;
+    }
     .about .about_inner {
         display: flex;
         flex-direction: column;
@@ -596,6 +598,9 @@ nav {
       }
 }
 @media(min-width:1000px) and (max-width:1279px) {
+  .about .abt_title {
+    background-size: 130%;
+}
     .about .proImg {
         width: 400px;
         height: 490px;
@@ -734,13 +739,7 @@ nav {
             height: 2920px;
         }
         .project .pro_title {
-          width: 100%;
-          height: 120px;
-          background-image: url(img/pro_title.png);
-          background-position: center center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-attachment: scroll;
+          background-size: 160%;
       }
         .project>article {
             height: 650px;
@@ -817,6 +816,9 @@ nav {
         .project {
             height: 3400px;
         }
+        .project .pro_title {
+          background-size: 150%;
+      }
         .project>article {
             height: 750px;
             width: 100%;
@@ -876,6 +878,9 @@ nav {
         .project {
             height: 3400px;
         }
+        .project .pro_title {
+          background-size: 130%;
+      }
         .project>article {
             height: 750px;
             width: 100%;
@@ -932,6 +937,9 @@ nav {
         }
     }
     @media(min-width:1000px) and (max-width:1279px) {
+      .project .pro_title {
+        background-size: 130%;
+    }
         .project article .txt_box .tBox_inner {
             height: 55%;
             width: 90%;

@@ -9,4 +9,22 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
     });
 
+
+    $("nav li").click(function(e){
+        e.preventDefault();
+        
+        let index = $(this).index();
+        let targetTop = $("header, section").eq(index).offset().top;
+
+        $("html, body").animate({ scrollTop: targetTop }, 800);
+    });
+
+
+
+
+
+
+
+
+
 }); //돈땃쥐
