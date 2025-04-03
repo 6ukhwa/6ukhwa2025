@@ -35,9 +35,9 @@ img {
 body {
     font-family: 'Arita';
     overflow-x: hidden;
-    cursor: url('img/cusor.png') 16 16, auto;
+    cursor: url('img/cusor.png') 16 1, auto;
 }
-a {cursor: url('img/cusor2.png') 16 16, auto;}
+a {cursor: url('img/cusor2.png') 16 1, auto;}
 ::-webkit-scrollbar {display: none;}
 
 
