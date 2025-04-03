@@ -654,7 +654,7 @@ nav {
         opacity: 0;
     }
     .txt_box.show {
-      overflow: hidden;
+
       animation: image 1s 0.6s ease;
       animation-fill-mode: forwards;
     }
