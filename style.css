@@ -742,7 +742,7 @@ nav {
     }
     .phone.show {
       overflow: hidden;
-      animation: short 1s 1s ease-out;
+      animation: short 1s 1s ease-in;
       animation-fill-mode: forwards;
     }
     .project article:nth-child(3) .img_box div {
