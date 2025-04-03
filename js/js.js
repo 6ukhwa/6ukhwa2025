@@ -19,6 +19,17 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: targetTop }, 800);
     });
 
+    $(window).scroll(function(){
+        var sc = $(this).scrollTop();
+        
+        $('.proImg, .img_box div, .contact_inner h2, .inform, .txt_box, .contact_inner h3, .qrcode, .phone').each(function(){
+
+            if($(this).offset().top < $(window).scrollTop() + $(window).height() * 0.9) {
+                $(this).addClass('show');
+            }
+        })
+
+    })
 
 
 

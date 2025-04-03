@@ -334,10 +334,23 @@ nav {
     background-repeat: no-repeat;
     margin-right: 80px;
     margin-top: -25px;
+    opacity: 0;
   }
+  .proImg.show {
+    overflow: hidden;
+    animation: image 1s 0.4s ease-out;
+    animation-fill-mode: forwards;
+  }
+
   .about .inform {
     /* background-color: sandybrown; */
     width: 35%;
+    opacity: 0;
+  }
+  .inform.show {
+    overflow: hidden;
+    animation: image 1s 1s ease-out;
+    animation-fill-mode: forwards;
   }
   .about .inform h2 {
     margin-bottom: 15px;
@@ -638,7 +651,14 @@ nav {
     .project article .txt_box {
         width: 45%;
         position: relative;
+        opacity: 0;
     }
+    .txt_box.show {
+      overflow: hidden;
+      animation: image 1s 0.6s ease;
+      animation-fill-mode: forwards;
+    }
+    
     .project article .txt_box .tBox_inner {
         height: 60%;
         width: 90%;
@@ -700,6 +720,12 @@ nav {
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        opacity: 0;
+    }
+    .img_box div.show {
+      overflow: hidden;
+      animation: image 1s ease;
+      animation-fill-mode: forwards;
     }
     .project article:nth-child(2) .img_box div {
         background-image: url(img/pro_1.png);
@@ -707,12 +733,18 @@ nav {
     .project article:nth-child(2) .img_box {
         position: relative;
     }
-    .project article:nth-child(2) .img_box img {
+    .phone {
         width: 180px;
         height: 353px;
         position: absolute;
         top: 35%;
         right: 5%;
+        opacity: 0;
+    }
+    .phone.show {
+      overflow: hidden;
+      animation: short 1s 1s ease-out;
+      animation-fill-mode: forwards;
     }
     .project article:nth-child(3) .img_box div {
         background-image: url(img/pro_2.png);
@@ -1007,9 +1039,21 @@ nav {
   .contact .contact_inner h2 {
     color: #ffffff;
     font-size: 48px;
+    opacity: 0;
+  }
+  .contact_inner h2.show {
+    overflow: hidden;
+    animation: image 1s ease;
+    animation-fill-mode: forwards;
   }
   .contact .contact_inner h3 {
     margin-bottom: -30px;
+    opacity: 0;
+  }
+  .contact_inner h3.show {
+    overflow: hidden;
+    animation: short 1s 0.4s ease;
+    animation-fill-mode: forwards;
   }
   .contact .contact_inner h3 a {
     color: #fff;
@@ -1028,6 +1072,12 @@ nav {
     width: 180px;
     height: 180px;
     margin-bottom: 80px;
+    opacity: 0;
+  }
+  .qrcode.show {
+    overflow: hidden;
+    animation: short 1s 0.6s ease;
+    animation-fill-mode: forwards;
   }
   .contact p {
     color: #fff;
@@ -1105,3 +1155,25 @@ nav {
 @media(min-width:601px) and (max-width:768px) {}
 @media(min-width:769px) and (max-width:999px) {}
 @media(min-width:1000px) and (max-width:1279px) {}
+
+
+@keyframes image {
+  0% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes short {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
