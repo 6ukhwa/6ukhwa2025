@@ -24,7 +24,7 @@ $(document).ready(function(){
         
         $('.proImg, .img_box div, .contact_inner h2, .inform, .txt_box, .contact_inner h3, .qrcode, .phone').each(function(){
 
-            if($(this).offset().top < $(window).scrollTop() + $(window).height() * 0.9) {
+            if($(this).offset().top < $(window).scrollTop() + $(window).height() * 0.85) {
                 $(this).addClass('show');
             }
         })
