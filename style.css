@@ -387,7 +387,8 @@ nav {
   .about .inform div:nth-child(4) ul li {
   }
   .about .inform div:nth-child(4) ul li img {
-    width: 35px;
+    /* width: 35px; */
+    height: 45px;
   }
   .about .inform ul {
     margin-bottom: 30px;
