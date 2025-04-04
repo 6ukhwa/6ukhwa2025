@@ -203,7 +203,7 @@ nav {
 }
 .nav_inner ul li {
     padding: 5px;
-    cursor: url('img/cusor2.png') 16 16, auto;
+    cursor: url('img/cusor2.png') 16 1, auto;
     display: inline-block;
     position: relative;
     color: #ffffff;
@@ -256,9 +256,17 @@ nav {
         display: block;
         font-size: 16px;
     }
+    .nav_inner {
+      display: flex;
+      justify-content: center;
+    }
     .nav_inner .gnb {
         display: none;
     }
+    .nav_inner h1 {
+      margin-left: 0px;
+  }
+ 
 
   }
   @media(min-width:601px) and (max-width:768px) {
