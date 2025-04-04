@@ -417,7 +417,7 @@ nav {
       }
       .about .abt_title {
         width: 100%;
-        height: 200px;
+        height: 150px;
         background-size: 160%;
     }
     .about .about_inner {
@@ -491,6 +491,7 @@ nav {
       }
       .about .abt_title {
         background-size: 150%;
+        height: 150px;
     }
     .about .about_inner {
         display: flex;
@@ -560,6 +561,7 @@ nav {
       }
       .about .abt_title {
         background-size: 130%;
+        height: 170px;
     }
     .about .about_inner {
         display: flex;
@@ -772,6 +774,7 @@ nav {
         }
         .project .pro_title {
           background-size: 160%;
+          height: 150px;
       }
         .project>article {
             height: 700px;
@@ -850,6 +853,7 @@ nav {
         }
         .project .pro_title {
           background-size: 150%;
+          height: 150px;
       }
         .project>article {
             height: 750px;
@@ -912,6 +916,7 @@ nav {
         }
         .project .pro_title {
           background-size: 130%;
+          height: 170px;
       }
         .project>article {
             height: 750px;
