@@ -790,7 +790,7 @@ nav {
 
     @media(max-width:600px) {
         .project {
-            height: 3200px;
+            height: 3150px;
         }
         .project .pro_title {
           background-size: 160%;
@@ -869,7 +869,7 @@ nav {
     }
     @media(min-width:601px) and (max-width:768px) {
         .project {
-            height: 3400px;
+            height: 3350px;
         }
         .project .pro_title {
           background-size: 150%;
@@ -932,7 +932,7 @@ nav {
     }
     @media(min-width:769px) and (max-width:999px) {
         .project {
-            height: 3400px;
+            height: 3370px;
         }
         .project .pro_title {
           background-size: 130%;
