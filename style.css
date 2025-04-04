@@ -187,6 +187,10 @@ nav {
     margin-top: 14px;
 }
 .nav_inner h1 a {}
+.nav_inner h1 a img {
+  width: 42px;
+  height: 42px;
+}
 .nav_inner ul {
     display: flex;
     align-items: center;
