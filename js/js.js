@@ -1,8 +1,13 @@
 $(document).ready(function(){
 
 
-    // $('#loader').removeClass('loaded');
-    // $('#loader').addClass('loaded');
+ // 애니메이션 실행
+ $('#loader').addClass('loaded');  
+
+ // 애니메이션 끝난 후 숨김 처리
+ setTimeout(function() {
+     $('#loader').addClass('hidden');
+ }, 1500);  // 1.5초 후 숨김 (애니메이션 시간과 맞추기)
     
     // top 버튼
     $(".topBtn").click(function () {

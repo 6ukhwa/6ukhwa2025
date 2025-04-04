@@ -42,33 +42,39 @@ a {cursor: url('img/cusor2.png') 16 1, auto;}
 
 
 
-/* #loader{
-    position:absolute; 
-    top: 0;
-    left: 0; 
-    width: 100vw;
-    height: 100vh; 
-    z-index: 99999; 
+#loader {
+  position: fixed; /* absolute → fixed로 변경 */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background: transparent;
+  pointer-events: none; /* 클릭 막기 방지 */
 }
+
 #loader:before,
-#loader:after{
-    content: ''; 
-    display: block; 
-    background-color: #242428; 
-    width: 50%; 
-    height: 100%; 
-    position: absolute; 
-    top: 0; 
-    transition: 0.5s 1s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-    transform: translateX(0);
-
+#loader:after {
+  content: '';
+  display: block;
+  background-color: #181818;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: transform 0.5s 1s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  transform: translateX(0);
 }
-#loader:before {left : 0;}
-#loader:after {right : 0;}
 
-#loader.loaded:before {transform :translateX(-100%);}
-#loader.loaded:after {transform :translateX(100%);} */
+#loader:before { left: 0; }
+#loader:after { right: 0; }
 
+#loader.loaded:before { transform: translateX(-100%); }
+#loader.loaded:after { transform: translateX(100%); }
+
+#loader.hidden {
+  display: none;
+}
 
 
 /* 헤더 설정######################### */
@@ -741,6 +747,7 @@ nav {
         height: 338px;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center center;
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         opacity: 0;
     }
