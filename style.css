@@ -401,6 +401,11 @@ nav {
     margin-right: 10px;
     white-space: nowrap;
   }
+  .about .inform div:nth-child(3) .confetti {
+    background-color: #181818;
+    color: #fff;
+    cursor: url('img/cusor2.png') 16 1, auto;
+  }
   .about .inform div:nth-child(3) ul li:hover {
     background-color: #181818;
     color: #fff;
