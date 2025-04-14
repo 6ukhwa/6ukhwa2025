@@ -1008,6 +1008,7 @@ nav {
       }
       .black_bg .no1 {
         top: 60px;
+        width: 70%;
       }
     }
     @media(min-width:601px) and (max-width:768px) {
