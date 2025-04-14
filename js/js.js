@@ -28,9 +28,9 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var sc = $(this).scrollTop();
         var winHeight = $(window).height();
-        var triggerPoint = sc + winHeight * 0.80; 
+        var triggerPoint = sc + winHeight * 0.8; 
     
-        $('.proImg, .img_box div, .contact_inner h2, .inform, .txt_box, .contact_inner h3, .qrcode, .phone').each(function(){
+        $('.proImg, .img_box div, .contact_inner h2, .inform, .txt_box, .contact_inner h3, .qrcode, .phone, .wave span').each(function(){
             if($(this).offset().top < triggerPoint) {
                 $(this).addClass('show');
             }
@@ -76,6 +76,7 @@ $(document).ready(function(){
             }
         }());
     });
+
 
 
 

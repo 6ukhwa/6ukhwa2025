@@ -345,12 +345,61 @@ nav {
   .about .abt_title {
     width: 100%;
     height: 200px;
-    background-image: url(img/abt_title.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
+    display: flex;
+    align-items: end;
+    justify-content: center;
   }
+  .about .abt_title .wave {
+  }
+  .about .abt_title .wave span {
+    font-size: 100px;
+    font-weight: 700;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(40px);
+    -webkit-text-stroke: 5px #181818;
+  }
+  .about .abt_title .wave span:nth-child(5) {
+    margin-right: 30px;
+  }
+
+/* 순서대로 딜레이 주기 */
+.wave span:nth-child(1).show { 
+  transition-delay: 0s; 
+  animation: wave 0.5s forwards;
+}
+.wave span:nth-child(2).show { 
+  animation: wave 0.5s 0.05s forwards;
+}
+.wave span:nth-child(3).show { 
+  animation: wave 0.5s 0.1s forwards;
+}
+.wave span:nth-child(4).show { 
+  animation: wave 0.5s 0.15s forwards;
+}
+.wave span:nth-child(5).show { 
+  animation: wave 0.5s 0.2s forwards;
+}
+.wave span:nth-child(6).show { 
+  animation: wave 0.5s 0.25s forwards;
+}
+.wave span:nth-child(7).show { 
+  animation: wave 0.5s 0.3s forwards;
+}
+
+@keyframes wave {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
   .about .proImg {
     width: 400px;
     height: 490px;
@@ -447,10 +496,16 @@ nav {
         /* background-color: darksalmon; */
       }
       .about .abt_title {
-        width: 100%;
-        height: 150px;
-        background-size: 160%;
-    }
+        align-items: center;
+      }
+      .about .abt_title .wave span {
+        font-size: 60px;
+        font-weight: 700;
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(40px);
+        -webkit-text-stroke: 3px #181818;
+      }
     .about .about_inner {
         display: flex;
         flex-direction: column;
@@ -521,9 +576,16 @@ nav {
         /* background-color: darksalmon; */
       }
       .about .abt_title {
-        background-size: 150%;
-        height: 150px;
-    }
+        align-items: center;
+      }
+      .about .abt_title .wave span {
+        font-size: 80px;
+        font-weight: 700;
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(40px);
+        -webkit-text-stroke: 4px #181818;
+      }
     .about .about_inner {
         display: flex;
         flex-direction: column;
@@ -668,13 +730,19 @@ nav {
         height: 2800px;
     }
     .project .pro_title {
-        width: 100%;
-        height: 200px;
-        background-image: url(img/pro_title.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-attachment: fixed;
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+    }
+    .project .pro_title .wave span {
+      font-size: 100px;
+      font-weight: 700;
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(40px);
+      -webkit-text-stroke: 5px #181818;
     }
     .project>article {
         height: 650px;
@@ -805,9 +873,16 @@ nav {
             height: 3150px;
         }
         .project .pro_title {
-          background-size: 160%;
-          height: 150px;
-      }
+          align-items: center;
+        }
+        .project .pro_title .wave span {
+          font-size: 60px;
+          font-weight: 700;
+          display: inline-block;
+          opacity: 0;
+          transform: translateY(40px);
+          -webkit-text-stroke: 3px #181818;
+        }
         .project>article {
             height: 700px;
             width: 100%;
@@ -884,9 +959,16 @@ nav {
             height: 3350px;
         }
         .project .pro_title {
-          background-size: 150%;
-          height: 150px;
-      }
+          align-items: center;
+        }
+        .project .pro_title .wave span {
+          font-size: 80px;
+          font-weight: 700;
+          display: inline-block;
+          opacity: 0;
+          transform: translateY(40px);
+          -webkit-text-stroke: 4px #181818;
+        }
         .project>article {
             height: 750px;
             width: 100%;
