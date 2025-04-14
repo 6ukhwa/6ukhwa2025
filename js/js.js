@@ -24,11 +24,11 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: targetTop }, 800);
     });
 
-    // 스크롤 0.85위치에서 애니메이션 작동
+    // 스크롤 0.7위치에서 애니메이션 작동
     $(window).scroll(function(){
         var sc = $(this).scrollTop();
         var winHeight = $(window).height();
-        var triggerPoint = sc + winHeight * 0.8; 
+        var triggerPoint = sc + winHeight * 0.7; 
     
         $('.proImg, .img_box div, .contact_inner h2, .inform, .txt_box, .contact_inner h3, .qrcode, .phone, .wave span').each(function(){
             if($(this).offset().top < triggerPoint) {
@@ -78,8 +78,26 @@ $(document).ready(function(){
     });
 
 
+    // 팝업창 설정
+
+    $('.view').click(function(){
+        let index = $(this).index('.view');   // 클릭한 .view의 순서를 가져옴
+    
+        $('.black_bg').addClass('on');
+        $('.close').addClass('on');
+        $('.no1').hide().eq(index).show().scrollTop(0);  // 해당 순서만 보이기
+    });
+    
+    // 닫기 버튼
+    $('.close').click(function(){
+        $('.black_bg').removeClass('on');
+        $('.close').removeClass('on');
+        $('.no1').hide();  // 닫을 때 모두 숨기기
+    });
+
+    
 
 
 
-
+    
 }); //돈땃쥐

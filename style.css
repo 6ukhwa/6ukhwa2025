@@ -788,13 +788,20 @@ nav {
         font-weight: 300;
 
     }
+    .project article .txt_box .tBox_inner ul li b {
+      font-weight: 600;
+    }
     .project article .txt_box .tBox_inner ul li>div {
         width: 70px;
         flex-shrink: 0;
     }
-    .project article .txt_box .tBox_inner .site {
+    .project article .txt_box .tBox_inner .btn {
+      display: flex;
+      width: 100%;
+    }
+    .project article .txt_box .tBox_inner .btn li {
         font-family: 'Arita';
-        width: 150px;
+        width: 180px;
         height: 50px;
         border: 1px solid #181818;
         background-color: #fff;
@@ -803,8 +810,23 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: 20px;
+        cursor: url('img/cusor2.png') 16 1, auto;
     }
-    .project article .txt_box .tBox_inner .site:hover {
+    .project article .txt_box .tBox_inner .btn li a {
+      transition: 0.3s;
+      background-color: #fff;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .project article .txt_box .tBox_inner .btn li:hover {
+        background-color: #181818;
+        color: #fff;
+    }
+    .project article .txt_box .tBox_inner .btn li:hover .site {
         background-color: #181818;
         color: #fff;
     }
@@ -845,7 +867,7 @@ nav {
     }
     .phone.show {
       overflow: hidden;
-      animation: short 0.8s 0.8s ease-in;
+      animation: short 0.8s 0.8s ease;
       animation-fill-mode: forwards;
     }
     .project article:nth-child(3) .img_box div {
@@ -867,6 +889,65 @@ nav {
         top: 35%;
         right: 5%;
     }
+
+  /* 팝업창 설정 */
+    .black_bg {
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 10;
+      display: none;
+  }
+  .black_bg.on {
+    display: block;
+  }
+  /* 닫기버튼 */
+  .close {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/close.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    position: fixed;
+    right: 5%;
+    top: 50%;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 11;
+    display: none;
+}
+.close {
+    transition: all 0.3s;
+}
+.close:hover {
+    transform: rotateZ(180deg);
+}
+.close.on {
+    display: block;
+}
+
+
+/* 프로젝트 팝업 */
+
+.black_bg .no1 {
+  overflow-y: scroll;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: none;
+}
+.black_bg .no1 img {
+  width: 100%;
+}
+
+
 
     @media(max-width:600px) {
         .project {
