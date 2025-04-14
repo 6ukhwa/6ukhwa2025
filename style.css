@@ -652,10 +652,6 @@ nav {
         height: 1300px;
         /* background-color: darksalmon; */
       }
-      .about .abt_title {
-        background-size: 130%;
-        height: 170px;
-    }
     .about .about_inner {
         display: flex;
         flex-direction: column;
@@ -707,9 +703,6 @@ nav {
       }
 }
 @media(min-width:1000px) and (max-width:1279px) {
-  .about .abt_title {
-    background-size: 130%;
-}
     .about .proImg {
         width: 400px;
         height: 490px;
@@ -905,30 +898,6 @@ nav {
     display: block;
   }
   /* 닫기버튼 */
-  .close {
-    width: 50px;
-    height: 50px;
-    background-image: url(img/close.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: auto;
-    position: fixed;
-    right: 5%;
-    top: 50%;
-    background-color: #fff;
-    border-radius: 50%;
-    z-index: 11;
-    display: none;
-}
-.close {
-    transition: all 0.3s;
-}
-.close:hover {
-    transform: rotateZ(180deg);
-}
-.close.on {
-    display: block;
-}
 
 
 /* 프로젝트 팝업 */
@@ -939,7 +908,7 @@ nav {
   height: 100%;
   position: absolute;
   left: 50%;
-  bottom: 0;
+  top: 70px;
   transform: translateX(-50%);
   display: none;
 }
@@ -955,6 +924,8 @@ nav {
         }
         .project .pro_title {
           align-items: center;
+          margin-bottom: -50px;
+          margin-top: 50px;
         }
         .project .pro_title .wave span {
           font-size: 60px;
@@ -1022,17 +993,21 @@ nav {
         .project article .txt_box .tBox_inner ul li b {
           font-size: 18px;
         }
-        .project article .txt_box .tBox_inner .site {
-          width: 100%;
+        .project article .txt_box .tBox_inner .btn {
+          justify-content: space-between;
+        }
+        .project article .txt_box .tBox_inner .btn li {
+          width: 48%;
           height: 50px;
-          border: 1px solid #181818;
-          background-color: #181818;
-          color: #fff;
           transition: 0.3s;
-          font-weight: 200;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          margin-right: 0;
+          font-size: 18px;
+      }
+      .project article .txt_box .tBox_inner .btn li a {
+        font-size: 18px;
+      }
+      .black_bg .no1 {
+        top: 60px;
       }
     }
     @media(min-width:601px) and (max-width:768px) {
@@ -1041,6 +1016,8 @@ nav {
         }
         .project .pro_title {
           align-items: center;
+          margin-bottom: -50px;
+          margin-top: 50px;
         }
         .project .pro_title .wave span {
           font-size: 80px;
@@ -1104,15 +1081,14 @@ nav {
         .project article .txt_box .tBox_inner ul li {
             font-size: 18px;
         }
+        .project article .txt_box .tBox_inner a {
+          font-size: 18px;
+        }
     }
     @media(min-width:769px) and (max-width:999px) {
         .project {
             height: 3370px;
         }
-        .project .pro_title {
-          background-size: 130%;
-          height: 170px;
-      }
         .project>article {
             height: 750px;
             width: 100%;
@@ -1167,17 +1143,20 @@ nav {
         .project article .txt_box .tBox_inner ul li {
             font-size: 18px;
         }
+
     }
     @media(min-width:1000px) and (max-width:1279px) {
-      .project .pro_title {
-        background-size: 130%;
-    }
         .project article .txt_box .tBox_inner {
             height: 55%;
             width: 90%;
             position: absolute;
             top: 55%;
             left: 7%;
+        }
+        .project .pro_title {
+          align-items: end;
+          margin-bottom: -50px;
+          margin-top: 50px;
         }
         .project article .txt_box .tBox_inner h2 {
             font-size: 36px;
@@ -1189,6 +1168,9 @@ nav {
         }
         .project article .txt_box .tBox_inner ul li {
             font-size: 18px;
+        }
+        .project article .txt_box .tBox_inner a {
+          font-size: 18px;
         }
         .project article .txt_box .tBox_inner ul li>div {
             width: 70px;

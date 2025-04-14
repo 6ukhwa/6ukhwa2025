@@ -84,14 +84,12 @@ $(document).ready(function(){
         let index = $(this).index('.view');   // 클릭한 .view의 순서를 가져옴
     
         $('.black_bg').addClass('on');
-        $('.close').addClass('on');
         $('.no1').hide().eq(index).show().scrollTop(0);  // 해당 순서만 보이기
     });
     
     // 닫기 버튼
-    $('.close').click(function(){
+    $('.black_bg').click(function(){
         $('.black_bg').removeClass('on');
-        $('.close').removeClass('on');
         $('.no1').hide();  // 닫을 때 모두 숨기기
     });
 
