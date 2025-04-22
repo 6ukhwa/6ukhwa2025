@@ -30,7 +30,7 @@ $(document).ready(function(){
         var winHeight = $(window).height();
         var triggerPoint = sc + winHeight * 0.7; 
     
-        $('.proImg, .img_box div, .contact_inner h2, .inform, .txt_box, .contact_inner h3, .qrcode, .phone, .wave span').each(function(){
+        $('.proImg, .img_box div, .contact_inner h2, .contact_inner span, .inform, .txt_box, .contact_inner h3, .qrcode, .phone, .wave span').each(function(){
             if($(this).offset().top < triggerPoint) {
                 $(this).addClass('show');
             }

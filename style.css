@@ -1247,6 +1247,25 @@ nav {
     color: #fff;
     margin-right: 5px;
   }
+  .contact .contact_inner span {
+    margin-top: -15px;
+    opacity: 0;
+  }
+  .contact .contact_inner span.show {
+    overflow: hidden;
+    animation: short 1s 0.6s ease;
+    animation-fill-mode: forwards;
+  }
+  .contact .contact_inner span a {
+    color: #fff;
+    font-weight: 100;
+    text-decoration: underline;
+  }
+  .contact .contact_inner span i {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 5px;
+  }
   .contact .contact_inner .qrcode {
     background-image: url(img/qr.png);
     background-repeat: no-repeat;
@@ -1254,12 +1273,12 @@ nav {
     background-position: center center;
     width: 180px;
     height: 180px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     opacity: 0;
   }
   .qrcode.show {
     overflow: hidden;
-    animation: short 1s 0.6s ease;
+    animation: short 1s 0.8s ease;
     animation-fill-mode: forwards;
   }
   .contact p {
@@ -1292,7 +1311,7 @@ nav {
 
   @media(max-width:600px) {
     .contact {
-        height: 600px;
+        height: 650px;
     }
     .contact .contact_inner {
     }
@@ -1305,9 +1324,19 @@ nav {
       .contact .contact_inner h3 a i {
         font-size: 16px;
       }
+      .contact .contact_inner span {
+
+      }
+      .contact .contact_inner span a {
+        font-size: 16px;
+      }
+      .contact .contact_inner span a i {
+        font-size: 20px;
+      }
       .contact .contact_inner .qrcode {
         width: 140px;
         height: 140px;
+        margin-bottom: 90px;
       }
       .contact .topBtn {
         position: absolute;
