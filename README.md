@@ -1,20 +1,18 @@
 
 ## <목차>
 
-Project001 _ 한국동물보호협회 : 기획, 제작, 디자인, 퍼블리싱 - 리뉴얼 프로젝트 (기존 페이지-http://www.koreananimals.or.kr/)
+Project001 _ 한국동물보호협회 : 기획, 제작, 디자인, 퍼블리싱 - 리뉴얼 프로젝트 [기존 페이지](http://www.koreananimals.or.kr/)
 
-Project002 _ 벤앤제리스 : 디자인, 퍼블리싱 - 리뉴얼 프로젝트 (기존 페이지-https://www.benjerry.co.kr/)
+Project002 _ 벤앤제리스 : 디자인, 퍼블리싱 - 리뉴얼 프로젝트 [기존 페이지](https://www.benjerry.co.kr/)
 
 Project003 _ 배우 홈페이지 : 기획, 제작, 디자인, 퍼블리싱 - 신규제작
 
-Project004 _ 국립암센터 : 기획, 제작, 디자인, 퍼블리싱 - 리뉴얼 프로젝트 (기존페이지-https://www.ncc.re.kr/)
+Project004 _ 국립암센터 : 기획, 제작, 디자인, 퍼블리싱 - 리뉴얼 프로젝트 [기존페이지](https://www.ncc.re.kr/)
 
 
 ---
 
-## Project001 한국동물보호협회
-
-https://6ukhwa.github.io/6ukhwa2025/kaps_renewal/
+## Project001 [한국동물보호협회](https://6ukhwa.github.io/6ukhwa2025/kaps_renewal/)
 1. gnb 6개 : 메인 페이지만 작업
 2. 메인페이지 : 
     - setInterval
@@ -24,8 +22,7 @@ https://6ukhwa.github.io/6ukhwa2025/kaps_renewal/
 
 ---
 
-## Project002 벤엔제리스
-https://6ukhwa.github.io/6ukhwa2025/bnj_renewal/
+## Project002 [벤엔제리스](https://6ukhwa.github.io/6ukhwa2025/bnj_renewal/)
 1. gnb 4개 : icecream 페이지 연결
 2. 메인페이지 : 
     - setInterval
@@ -43,8 +40,7 @@ https://6ukhwa.github.io/6ukhwa2025/bnj_renewal/
 
 ---
 
-## Project003 배우 홈페이지
-https://6ukhwa.github.io/6ukhwa2025/ldh_page/
+## Project003 [배우 홈페이지](https://6ukhwa.github.io/6ukhwa2025/ldh_page/)
 1. gnb 4개 : 각 센션으로 스크롤 연결
 2. 메인페이지 : 
     - setInterval
@@ -60,8 +56,8 @@ https://6ukhwa.github.io/6ukhwa2025/ldh_page/
 
 ---
 
-## Project004 국립암센터
-https://6ukhwa.github.io/6ukhwa2025/ncc_rewewal/
+## Project004 [국립암센터](https://6ukhwa.github.io/6ukhwa2025/ncc_rewewal/)
+
 1. gnb 6개 : 메인 페이지만 작업
 2. 메인페이지 :
     - gnb, 2뎁스, 검색창 설정
