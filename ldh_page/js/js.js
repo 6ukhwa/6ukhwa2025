@@ -8,15 +8,11 @@ $(document).ready(function(){
     // $('html,body').scrollTop((200*acNum)+600);
 
 
-// $('#loader').removeClass('loaded');
-// $('#loader').addClass('loaded');
-
-
 // 브라우저의 높이값
 let winht = $(window).height()
 
 
-// 화면이 리사이징 될때마다 브라우저 화면높이를 찾아라
+// 화면이 리사이징 될때마다 브라우저 화면높이 찾기
 $(window).resize(function(){
 
     let winht2 = $(window).height()
@@ -36,7 +32,7 @@ $('.st_box').click(function(){
 })
 
 
-// 화면에서 스크롤했을때 스크롤top값을 찾아라
+// 화면에서 스크롤했을때 스크롤top값 찾기
 $(window).scroll(function(){
 
     let sc = $(this).scrollTop()
@@ -88,7 +84,7 @@ $(window).scroll(function(){
 
 
 
-// gnb li를 클릭할때 순번을 찾고 article의 높이값에 곱해서 스크롤top을 움직여라
+// gnb li를 클릭할때 순번
 $('.gnb li').click(function(){
 
     let ht = $('article').height();

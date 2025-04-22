@@ -139,7 +139,7 @@ $(document).ready(function(){
           
         $('.reservation_form').find('button').click(function(e){
             e.preventDefault();
-            // 날짜를 찾아오기
+            // 날짜 찾아오기
             let selectDate = $('#datepicker').datepicker('getDate');
             let selectMon = selectDate.getMonth()
             let selectDay = selectDate.getDate()

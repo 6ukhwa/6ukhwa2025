@@ -140,7 +140,7 @@ $(document).ready(function(){
         }
     });
    
-    // util cart를 클릭했을때, popUp이 보이고 .popUp_inner는 오른쪽에서 천천히 나와라
+    // util cart를 클릭했을때, popUp이 보이고 .popUp_inner는 오른쪽에서 나옴
 
     $('.util .cart').click(function(e){
         e.preventDefault()
@@ -153,7 +153,7 @@ $(document).ready(function(){
 
 
 
-    // popUp과 popUp span을 클릭했을때 popUP이 닫혀라
+    // popUp과 popUp span을 클릭했을때 popUP이 닫힘
     $('.popUp span, .popUp').click(function(){
 
         $('.popUp').hide();
@@ -162,8 +162,8 @@ $(document).ready(function(){
     })
 
 
-        // empty를 click 했을때 장바구니의 숫자가 0이되어라.
-        // shop의 list를 비워라
+        // empty를 click 했을때 장바구니의 숫자가 0으로
+        // shop의 list 비우기
         $('.empty').click(function(){
 
             ct=0;
@@ -179,7 +179,7 @@ $(document).ready(function(){
 
 
 
-    // 각각의 container small_img li를 클릭했을때 container big_img가 바뀌어라
+    // 각각의 container small_img li를 클릭했을때 container big_img 바뀜
     $('.small_img li').click(function(){
 
         var ig = $(this).index();
@@ -204,14 +204,12 @@ $(document).on('click', '.pro_icon img', function() {
     console.log(ct);
     $('.cart em').text(ct)
 
-    // popUp_pd의 p가 사라져아
     $('.popUp_pd').find('p').css({'display':'none'});
-    // popUp_list가 없어져라
     $('.popUp_list').css({'display':'block'})
 
 
-    // 나의 부모 안에서 price를 찾아서 금액을 출력해라
-    // 나의 부모안에서 p 안에 있는 img태그를 출력해라
+    // 부모 안에서 price를 찾아서 금액을 출력
+    // 부모안에서 p 안에 있는 img태그를 출력
     let txt = $(this).parents('.pro_top').find('.price').find('span').text()
     let tt = $(this).parents('.pro_top').find('p').html()
     let tn = $(this).parents('.pro_top').find('strong').text()
@@ -220,7 +218,7 @@ $(document).on('click', '.pro_icon img', function() {
     let nt = Number(txt)
 
     console.log(nt);
-    // popUp_pd에 popUp_list를 계속 누적되게 출력해라
+    // popUp_pd에 popUp_list를 계속 누적되게 출력
     // $('.popUp_pd').find('.popUp_list').append('<div>'+(tt+tn+txt)+'</div>')
     $('.popUp_pd').find('.popUp_list').append('<div>'+('<div>'+tt+'</div>')+('<div>'+tn+'</div>')+('<div>'+txt+'<span>원</span></div>')+'</div>')
 

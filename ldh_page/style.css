@@ -28,36 +28,7 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
-/* 
 
-#loader{
-    position:absolute; 
-    top: 0;
-    left: 0; 
-    width: 100vw;
-    height: 100vh; 
-    z-index: 99999; 
-}
-#loader:before,
-#loader:after{
-    content: ''; 
-    display: block; 
-    background-color: #242428; 
-    width: 50%; 
-    height: 100%; 
-    position: absolute; 
-    top: 0; 
-    transition: 0.5s 1s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
-    transform: translateX(0);
-
-}
-#loader:before {left : 0;}
-#loader:after {right : 0;}
-
-#loader.loaded:before {transform :translateX(-100%);}
-#loader.loaded:after {transform :translateX(100%);}
-
- */
 
 
 /* 섹션 사이즈 설정######################### */
