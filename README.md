@@ -14,7 +14,7 @@ Project004 _ 국립암센터 : 기획, 제작, 디자인, 퍼블리싱 - 리뉴�
 
 ## Project001 한국동물보호협회
 
-http://w6ukhwa.dothome.co.kr/kaps_renewal
+https://6ukhwa.github.io/6ukhwa2025/kaps_renewal/
 1. gnb 6개 : 메인 페이지만 작업
 2. 메인페이지 : 
     - setInterval
@@ -25,7 +25,7 @@ http://w6ukhwa.dothome.co.kr/kaps_renewal
 ---
 
 ## Project002 벤엔제리스
-http://w6ukhwa.dothome.co.kr/bnj_renewal
+https://6ukhwa.github.io/6ukhwa2025/bnj_renewal/
 1. gnb 4개 : icecream 페이지 연결
 2. 메인페이지 : 
     - setInterval
@@ -44,7 +44,7 @@ http://w6ukhwa.dothome.co.kr/bnj_renewal
 ---
 
 ## Project003 배우 홈페이지
-http://w6ukhwa.dothome.co.kr/ldh-page
+https://6ukhwa.github.io/6ukhwa2025/ldh-page/
 1. gnb 4개 : 각 센션으로 스크롤 연결
 2. 메인페이지 : 
     - setInterval
@@ -61,7 +61,7 @@ http://w6ukhwa.dothome.co.kr/ldh-page
 ---
 
 ## Project004 국립암센터
-http://w6ukhwa.dothome.co.kr/ncc_rewewal
+https://6ukhwa.github.io/6ukhwa2025/ncc_rewewal/
 1. gnb 6개 : 메인 페이지만 작업
 2. 메인페이지 :
     - gnb, 2뎁스, 검색창 설정
