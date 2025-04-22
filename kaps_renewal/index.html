@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국동물보호협회</title>
+
+    
+
+    <!-- 외부스타일시트연결 -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 제이쿼리CDN연결 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    
+    <!-- 외부스크립트연결 -->
+    <script src="js/js.js"></script>
+    <!-- 스크롤 -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <!-- 달력 -->
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+
+    <!-- 폰트어썸 CDN연결 -->
+    <script src="https://kit.fontawesome.com/4ba59bc0f1.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    
+
+    
+    <!-- top버튼 설정 -->
+    <div class="top_btn">
+        <img src="img/top.png" alt="">
+        
+    </div>
+
+    <!-- 헤더설정 -->
+    <header>
+        <div class="header_inner">
+            <h1>
+                <a href="">
+                    <img src="img/logo_h_fff.png" alt="" class="first">
+                    <img src="img/logo_h_color.png" alt="" class="second">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="">협회소개</a></li>
+                    <li><a href="">쉼터</a></li>
+                    <li><a href="">입양</a></li>
+                    <li><a href="">후원&봉사</a></li>
+                    <li><a href="">게시판</a></li>
+                    <li><a href="">공지사항</a></li>
+                </ul>
+            </nav>
+            <div class="util">
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="wrap">
+
+       
+
+        <!-- 첫번째 섹션############################################### -->
+        <section>
+            <div class="hero_bg">
+                <div class="hero_bg1"></div>
+                <div class="hero_bg2"></div>
+            </div>
+            <div class="hero">
+                <div class="txtBox">
+                    <img src="img/hero.png" alt="">
+                    <span><a href="">보호동물 보러가기</a></span>
+                </div>
+               
+                <div class="notice">
+                    <div class="notice_inner">
+                        <h2>공지사항</h2>
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <ul>
+                            <li>- 고양이 쉼터 이전했습니다.<time datetime="2024-04-15">24.04.15</time></li>
+                            <li>- 유기동물 입양 독려 캠패인<time datetime="2024-03-22">24.03.22</time></li>
+                            <li>- 23년 기부금 영수증 신청 받습니다.<time datetime="2024-01-05">24.01.05</time></li>
+                        </ul>
+                        <div class="total">
+                            4월 유기동물 입소 통계<div class="num" data-count="42">0</div>마리
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+        <!-- 두번째 섹션################################################ -->
+        <section data-scroll>
+            <img src="img/leftpaw.png" alt="" class="lPaw">
+            <img src="img/rightpaw.png" alt="" class="rPaw">
+
+            <div class="shelter">
+                <h1>쉼터 소식</h1>
+                <p>업데이트 된 쉼터 아이들의 새로운 일상을 확인해 보세요.</p>
+
+                <ul>
+                    <li><div class="shelter_hover"><span>창밖 구경이 좋아요</span></div></li>
+                    <li><div class="shelter_hover"><span>여름맞이 촬영봉사</span></div></li>
+                    <li><div class="shelter_hover"><span>간식시간만 기다리는 춘봉</span></div></li>
+                    <li><div class="shelter_hover"><span>겨울 장난감 정리중!</span></div></li>
+                </ul>
+                <a href="" class="btn">
+                    <i class="fa-solid fa-plus"></i><p>전체보기</p>
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- 세번째 섹션################################################## -->
+        <section data-scroll>
+            <div class="donationUse">
+                <h1>후원금은 어디에 쓰이나요?</h1>
+
+                <ul>
+                    <li>
+                        <div class="donate_hover">
+                            <h2>동물권 교육</h2>
+                            <p>올바른 동물권 교육을 위해<br>매 달 정기적으로 전 연령 대상<br>초청강연을 진행합니다. </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="donate_hover">
+                            <h2>구조 &#8226; 구호</h2>
+                            <p>긴급한 도움이 필요한 동물을<br>구조하고 치료 및 중성화 수술 등<br>구호활동을 합니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="donate_hover">
+                            <h2>보호 &#8226; 입양</h2>
+                            <p>구조한 동물을 살처분 위험 없이<br>청결한 환경에서 따뜻하게 보살피며,<br>입양심사를 통해 평생 가족을 찾습니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <!-- 네번째 섹션################################################ -->
+        <section>
+            <div class="doggy">
+                <div class="doggy_inner">
+                    <h1>지금 사랑을 실천해 보세요.</h1>
+
+                    <div class="symbol">
+                        <div class="doggyImg">
+                            <img src="img/donate.png" alt="">
+                            <div class="doggyBtn">후원 시작하기</div>
+                        </div>
+                        <div class="doggyImg">
+                            <img src="img/volunteer.png" alt="">
+                            <div class="doggyBtn">봉사 신청하기</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- 다섯번째 섹션############################### -->
+        <section data-scroll>
+                <div class="left"></div>
+                <!-- 트리거 버튼용. 지우지말것 -->
+
+                <div class="adopt">
+                    <h1>입양 후 이야기</h1>
+                    <p>가장 실천적인 동물 구호활동 입양! 새 가족을 찾은 아이들은 어떻게 지내고 있을까요?</p>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="img/adopt1.jpg" alt="">
+                                        <div class="title">
+                                            바깥 구경을 좋아하는 동이</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/adopt2.jpg" alt="">
+                                        <div class="title">백설이 이야기</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/adopt3.jpg" alt="">
+                                        <div class="title">마찌는 봄체질</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/adopt4.jpg" alt="">
+                                        <div class="title">동키 적응완료!</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/adopt5.jpg" alt="">
+                                        <div class="title">공공이 소식~</div>
+                                    </a>
+                                </li>
+                            </ul>
+                
+                    
+                </div>
+        </section>
+
+
+        <!-- 여섯번째 섹션########################################### -->
+        <section data-scroll>
+            <div class="news">
+                <div class="news_inner">
+                    <ul>
+                        <li>
+                            <div class="newsTxt">
+                                <div class="btn"><i class="fa-solid fa-plus"></i></div>
+                                <h2>나눔 봉사 뉴스</h2>
+                                <p>후원자님들의 <strong>사랑</strong>에<br>책임감을 갖고 <strong>투명</strong>하게<br>사용하겠습니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news_hover">00대학 봉사 동아리의 방문</div>
+                            <img src="img/news2.png" alt="">
+                        </li>
+                        <li>
+                            <div class="news_hover">하림팻푸드 사료후원</div>
+                            <img src="img/news3.png" alt="">
+                        </li>
+                        <li>
+                            <div class="news_hover">000님의 간식 후원</div>
+                            <img src="img/news4.jpeg" alt="">
+                        </li>
+                        <li>
+                            <div class="news_hover">박규리님 팬분의 후원입니다.</div>
+                            <img src="img/news5.jpeg" alt="">
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 일곱번째 섹션######################################### -->
+        <section>
+           <div class="map_inner">
+                <div class="map">
+                    <p>오시는 길</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.386444558425!2d128.56181857637316!3d35.83952662126112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e49f281c6e5b%3A0x3cf5ef04a0d38587!2z7ZWc6rWt64-Z66y867O07Zi47ZiR7ZqM!5e0!3m2!1sko!2skr!4v1718180240113!5m2!1sko!2skr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                    <div class="mapInfo">
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i>대구광역시 남구 대명6동 1210-2</li>
+                            <li><i class="fa-solid fa-headset"></i>053&#41;622-3589</li>
+                            <li><i class="fa-solid fa-bus"></i>버스: 651, 805<br>지하철: 대명역 1번출구</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="reservation">
+                    <p>강연 예약하기</p>
+                    <div class="datepicker_wrap">
+                        <div id="datepicker"></div>
+                        <div class="reservation_form">
+                            
+                            <form action="">
+                                
+                                <div class="formSelect">
+                                    <label for="">인원</label>
+                                    <input type="number" min="1" max="10" value="1" id="people">
+                                </div>
+                                <div class="formSelect">
+                                    <label for="">프로그램</label>
+                                    <select name="" id="program">
+                                        <option value="">프로그램을 선택해주세요.</option>
+                                        <option value="">안녕, 낯선 친구</option>
+                                        <option value="">반려동물 건강 상식</option>
+                                        <option value="">고양이 마음 알기</option>
+                                        <option value="">행복한 반려인, 행복한 반려동물</option>
+                                    </select>
+                                </div>
+        
+                                <button>확인</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="fixed">
+                    
+                    <article>
+                        <strong>예약이 신청되었습니다.</strong>
+                        <ul>
+                            <li><span></span> 일<em></em> 명</li>
+                            <li><span></span></li>
+                        </ul>
+                        
+                    </article>
+                    <div class="pop_text">예약이 <b>확정되는 대로<br>문자</b> 드리겠습니다.</div>
+                    <div class="close"><p>확인</p></div>
+                </div>
+                <div class="rsv_notice">
+                    <p><i class="fa-solid fa-check"></i>10인 이상 단체는 센터로 연락바랍니다.</p>
+                    <p><i class="fa-solid fa-check"></i>모든 강연은 선착순 신청으로 접수됩니다.</p>
+                    <p><i class="fa-solid fa-check"></i>원활한 강연을 위해 만 3세 이하 아동 동행은 어렵습니다. </p>
+                </div>
+            </div>
+
+            
+    </section>
+
+
+
+        <footer>
+            <p>본 페이지는 포트폴리오 용으로 제작된 사이트입니다.</p>
+            <p>copyright &copy; 2024.6ukhwa. All Rights Reserved.</p>
+        </footer>
+
+
+
+
+
+    </div> <!-- wrap -->
+
+</body>
+</html>

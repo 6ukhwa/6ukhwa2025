@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+<!-- 네이버 로그인 -->
+<script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+
+    <!-- 제이쿼리 CDN연결 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- 외부스트립트 연결-->
+    <script src="js/js.js"></script>
+
+    
+    <!-- 폰트어썸 CDN연결 -->
+    <script src="https://kit.fontawesome.com/4ba59bc0f1.js" crossorigin="anonymous"></script>
+
+    <!-- 외부 스타일시트 연결 -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+
+<body>
+
+    <header>
+        <div class="header_inner">
+            <h1>
+                <a href="index.html"><img src="img/logo.png" alt="로고"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="detail_page.html">IceCream</a></li>
+                    <li><a href="">Store</a></li>
+                    <li><a href="">Brand</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="util">
+                <ul>
+                    <li class="log"><a href="login.html"><img class="user" src="img/user.png" alt="로그인"></a></li>
+                    <li><a href=""><img class="heart" src="img/heart.png" alt="찜"></a></li>
+                    <li class="cart"><a href=""><img class="bag" src="img/bag.png" alt="장바구니"><em>0</em></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="log_wrap">
+        <div class="logIn">
+            <div class="log_box">
+                <img src="img/logo.png" alt="">
+                <form action="">
+                    <div class="txt_area">
+                        <input type="text" placeholder="아이디">
+                    </div>
+                    <div class="txt_area">
+                        <input type="password" placeholder="비밀번호">
+                    </div>
+                    <div class="warning">
+                        <p>아이디 또는 비밀번호가 잘못 되었습니다.<br>아이디와 비밀번호를 정확히 입력해 주세요.</p>
+                    </div>
+                    <div class="btn_area">
+                        <button>로그인</button>
+    
+                        <div class="caption">
+                            <a href="">회원가입</a>
+                            <a href="">아이디/비밀번호 찾기</a>
+                        </div>  
+    
+                    </div>    
+                    <!-- 네이버 로그인 버튼 노출 영역 -->
+                <div class="naver_wrap">
+                    <div id="naver_id_login"></div>
+                </div>
+               
+                    
+    
+                </form>
+                
+            </div>
+    
+        </div>
+    
+    </div>
+    
+      <!-- 장바구니 팝업페이지################################# -->
+    
+      <div class="popUp">
+        <div class="popUp_inner">
+            <div class="popUp_contents">
+                <h2>장바구니</h2>
+                <ul class="popUp_subt">
+                    <li>상품</li>
+                    <li>금액</li>
+                </ul>
+                <div class="popUp_pd">
+                    <div class="popUp_list">
+                    </div>
+
+                    <p>장바구니가 비었습니다.</p>
+                    
+                </div>
+                <div class="total">
+                    <P>Total<strong><em>0</em>원</strong></P>
+                </div>
+                <ul class="popUp_btn">
+                    <button class="order"><a href="login.html">주문하기</a></button>
+                    <button class="empty">장바구니 비우기</button>
+                </ul>
+            </div>
+        </div>
+        <span><i class="fa-solid fa-xmark"></i></span>
+    </div>]
+
+    
+   
+
+</body>
+
+
+<!-- //네이버 로그인 버튼 노출 영역 -->
+<script type="text/javascript">
+    var naver_id_login = new naver_id_login("957OyUBtHAZhGUioxZyS", "http://w6ukhwa.dothome.co.kr");
+    var state = naver_id_login.getUniqState();
+    naver_id_login.setButton("white", 3,40);
+    naver_id_login.setDomain("YOUR_SERVICE_URL");
+    naver_id_login.setState(state);
+    naver_id_login.setPopup();
+    naver_id_login.init_naver_id_login();
+</script>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Icecream</title>
+
+    <!-- 제이쿼리 CDN연결 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+     <!-- 외부스트립트 연결-->
+     <script src="js/js.js"></script>
+
+    
+     <!-- 폰트어썸 CDN연결 -->
+     <script src="https://kit.fontawesome.com/4ba59bc0f1.js" crossorigin="anonymous"></script>
+ 
+    <!-- 외부스타일시트 연결 -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <header>
+        <div class="header_inner">
+            <h1>
+                <a href="index.html"><img src="img/logo.png" alt="로고"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="detail_page.html">IceCream</a></li>
+                    <li><a href="">Store</a></li>
+                    <li><a href="">Brand</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="util">
+                <ul>
+                    <li class="log"><a href="login.html"><img class="user" src="img/user.png" alt="로그인"></a></li>
+                    <li><a href=""><img class="heart" src="img/heart.png" alt="찜"></a></li>
+                    <li class="cart"><a href=""><img class="bag" src="img/bag.png" alt="장바구니"><em>0</em></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+            <!-- 상세페이지 ############################################ -->
+
+            <div class="detail_page">
+
+                <div class="sale_inner">
+                    <div class="pro_main">
+                        <div class="container">
+                                <div class="big_img">
+                                    <ul>
+                                        <li><img src="img/detail_1.jpg" alt=""></li>
+                                        <li><img src="img/detail_2.png" alt=""></li>
+                                        <li><img src="img/datail_3.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                   
+                                <div class="small_img">
+                                    <ul>
+                                        <li><img src="img/detail_1.jpg" alt=""></li>
+                                        <li><img src="img/detail_2.png" alt=""></li>
+                                        <li><img src="img/datail_3.png" alt=""></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="pro_sub">
+                            <div class="pro_sub_inner">
+                                <strong>Original Ice Cream</strong>
+                                <p>오리지널 아이스크림</p>
+                                
+                                    <div class="sub_box1">
+                                        <h4>사이즈를 선택해 주세요.</h4>
+
+                                        <div class="sub_box1Img">
+                                            <div></div>
+                                            <div></div>
+                                           
+                                        </div>
+                                        <div class="sub_box1Btn">
+                                            <em class="size">
+                                                파인트<br>
+                                                473ml
+                                            </em>
+                                            <em class="size">
+                                                미니컵<br>
+                                                120ml
+                                            </em>
+                                        </div>
+                                      
+                                    </div>
+                                  
+                            
+                                <div class="sub_box2">
+                                    <h4>옵션을 선택해 주세요.</h4>
+                                    <select name="taste" id="taste">
+                                        <option value="">옵션</option>
+                                        <option value="">체리 가르시아</option>
+                                        <option value="">청키몽키</option>
+                                        <option value="">민트 초콜릿 찬스</option>
+                                        <option value="">하프 베이크드</option>
+                                        <option value="">마쉬멜로우 스카이</option>
+                                        <option value="">카라멜 초콜릿 치즈케이크</option>
+                                        <option value="">스트로베리 치즈케이크</option>
+                                        <option value="">초콜릿 퍼지 브라우니</option>
+                                        <option value="">라이트 카라멜 액션</option>
+                                    </select>
+                                    <div class="sub_box2_list">
+                                        
+                                    </div>
+                                </div>
+                                <div class="sub_box3">
+                                    <P>Total<strong><em id="priceDisplay">0</em>원</strong></P>
+                                    
+                                    <div class="addCart">
+                                        <a href="login.html"><input type="button" value="결제하기"></a>
+                                        <img src="img/cart_b.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                        <div class="recommend">
+                            <p>이런 것도 있어요</p>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="img/recommend_1.jpg" alt="">
+                                        <p>도기 아이스크림</p>
+                                        <strong>9,900원</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/recommend_2.jpg" alt="">
+                                        <p>비건 아이스크림</p>
+                                        <strong>14,900원</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/recommend_3.jpg" alt="">
+                                        <p>토니 초콜릿</p>
+                                        <strong>9,900원</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/recommend_4.jpg" alt="">
+                                        <p>쿠키 도우 청크</p>
+                                        <strong>9,900원</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/recommend_5.jpg" alt="">
+                                        <p>리틀 바잇 초코볼</p>
+                                        <strong>9,900원</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+    
+    
+            </div>
+    
+    
+    
+            <!-- 푸터############################################ -->
+            <footer>
+                <p>본 페이지는 포트폴리오 용으로 제작된 사이트입니다.</p>
+                <p>copyright &copy; 2024.6ukhwa. All Rights Reserved.</p>
+            </footer>
+    
+        </div>
+         <!-- 팝업페이지################################# -->
+    
+         <div class="popUp">
+            <div class="popUp_inner">
+                <div class="popUp_contents">
+                    <h2>장바구니</h2>
+                    <ul class="popUp_subt">
+                        <li>상품</li>
+                        <li>금액</li>
+                    </ul>
+                    <div class="popUp_pd">
+                        <div class="popUp_list">
+                        </div>
+    
+                        <p>장바구니가 비었습니다.</p>
+                        
+                    </div>
+                    <div class="total">
+                        <P>Total<strong><em>0</em>원</strong></P>
+                    </div>
+                    <ul class="popUp_btn">
+                        <button class="order"><a href="login.html">주문하기</a></button>
+                        <button class="empty">장바구니 비우기</button>
+                    </ul>
+                </div>
+            </div>
+            <span><i class="fa-solid fa-xmark"></i></span>
+        </div>
+    
+    
+    
+</body>
+</html>
