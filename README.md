@@ -44,7 +44,7 @@ https://6ukhwa.github.io/6ukhwa2025/bnj_renewal/
 ---
 
 ## Project003 배우 홈페이지
-https://6ukhwa.github.io/6ukhwa2025/ldh-page/
+https://6ukhwa.github.io/6ukhwa2025/ldh_page/
 1. gnb 4개 : 각 센션으로 스크롤 연결
 2. 메인페이지 : 
     - setInterval
